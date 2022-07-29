@@ -1,0 +1,26 @@
+@import "./colors.css";
+
+.board{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 51px;
+}
+
+.board__column{
+    height: 904px;
+    width: 420px;
+    background-color: var(--cardBackground);
+    border-radius: 50px;
+    margin-right: 54px;
+    overflow: hidden;
+}
+
+.board__column .column--title{
+    padding: 20px 0px;
+    text-align: center;
+    background-color: var(--titleBackground);
+    color: var(--titleText);
+    font-size: var(--title);
+}
