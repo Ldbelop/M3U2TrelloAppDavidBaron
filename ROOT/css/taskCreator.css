@@ -21,9 +21,9 @@
     font-size: var(--title);
 }
 
-.board__taskCreator .form--item{
+.board__taskCreator-form--item{
     width: 345px;
-    height: 81px;
+    height: 90px;
     display: flex;
     margin-top: 10px;
     flex-direction: column;
@@ -34,13 +34,13 @@
 }
 
 
-.form--item label{
+.board__taskCreator-form--item label{
     font-size: var(--subTitle);
 }
 
-.form--item .input--item{
+.board__taskCreator-form--item-input--item{
     width: 351px;
-    height: 40px;
+    height: 100px;
     margin-top: 18px;
     border: 0px transparent;
     border-radius: 12px;
@@ -48,7 +48,7 @@
 
 
 
-#taskCreator--content{
+.board__taskCreator-content{
     background-color: var(--cardBackground);
     height: 903px;
     width: 411px;
