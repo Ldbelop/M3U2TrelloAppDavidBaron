@@ -11,7 +11,7 @@
         {
             "id": 2,
             "title": "Título 2",
-            "ResPerson": "User2",
+            "resPerson": "User2",
             "state": "to-start",
             "content": "Lorem Ipsum dolor amet"
         }

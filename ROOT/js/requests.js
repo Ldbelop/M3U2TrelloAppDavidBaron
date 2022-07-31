@@ -1,5 +1,5 @@
 function showAllCards(cards){
-    cards.map((card) => console.log(card))
+    cards.map((card) => renderCard(card))
 }
 
 function renderCard(card){
