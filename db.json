@@ -3,14 +3,17 @@
         {
             "id": 1,
             "title": "Título 1",
-            "person": "User1",
-            "state": "to-start"
+            "resPerson": "User1",
+            "state": "to-start",
+            "content": "Lorem Ipsum dolor amet",
+            "deadline": "20/oct/22"
         },
         {
             "id": 2,
             "title": "Título 2",
-            "person": "User2",
-            "state": "to-start"
+            "ResPerson": "User2",
+            "state": "to-start",
+            "content": "Lorem Ipsum dolor amet"
         }
     ]
 }    
