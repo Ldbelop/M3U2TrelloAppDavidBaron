@@ -9,39 +9,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
     <title>Kanban Trello app</title>
+    <link rel="icon" type="image/x-icon" href="../ROOT/assets/img/favicon.png">
 </head>
 <body>
+    <header>
+        <img src="./assets/img/favicon.png" alt="favicon">
+        <h1>KANBAN TRELLO APP</h1>
+    </header>
     <div class="board">
-        <div class="board__column" id="ready-to-start--column">
-            <h1 class="column--title">Listo para iniciar</h1>
+        <div class="board__column-container">
+                <div class="board__column" id="ready-to-start--column">
+                    <h1 class="column--title">LISTO PARA INICIAR</h1>
+                </div>
+                <div class="board__column" id="in-progress--column">
+                    <h1 class="column--title">TRABAJO EN PROGRESO</h1>
+                </div>
+                <div class="board__column" id="done--column">
+                    <h1 class="column--title">TERMINADO</h1>    
+                </div>
         </div>
-        <div class="board__column" id="in-progress--column">
-            <h1 class="column--title">Trabajo en progreso</h1>
+        <div class="board__taskCreator-container">
+            <form action="" class="board__taskCreator">
+                <h1>AÑADIR TAREA</h1>
+                <div class="board__taskCreator-content">
+                    <div class="board__taskCreator-form--item">
+                        <label for="task-responsible">Responsable tarea</label>
+                        <input type="text" name="" class="board__taskCreator-form--item-input--item" id="task-responsible" placeholder="Añadir nombre del responsable">
+                    </div>
+                    <div class="board__taskCreator-form--item" id="task-title">
+                        <label for="task-title">Titulo tarea</label>
+                        <input type="text" name="" class="board__taskCreator-form--item-input--item" class="task-title" placeholder="Añadir título">
+                    </div>
+                    <div class="board__taskCreator-form--item" id="task-description">
+                        <label for="task-description">Descripción</label>
+                        <textarea class="board__taskCreator-form--item-input--item" class="task-description" placeholder="Añadir descripción"></textarea>
+                    </div>
+                    <div class="board__taskCreator-form--item">
+                        <label for="">Fecha de entrega</label>
+                        <input type="text" name="" class="board__taskCreator-form--item-input--item" id="" placeholder="Añadir fecha de entrega">
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="board__column" id="done-column">
-            <h1 class="column--title">Terminado</h1>    
-        </div>
-        <form action="" class="board__taskCreator">
-            <h1>AÑADIR TAREA</h1>
-            <div class="board__taskCreator-content">
-                <div class="board__taskCreator-form--item">
-                    <label for="task-responsible">Responsable tarea</label>
-                    <input type="text" name="" class="board__taskCreator-form--item-input--item" id="task-responsible">
-                </div>
-                <div class="board__taskCreator-form--item">
-                    <label for="task-title">Titulo tarea</label>
-                    <input type="text" name="" class="board__taskCreator-form--item-input--item" id="task-title">
-                </div>
-                <div class="board__taskCreator-form--item">
-                    <label for="task-description">Descripción</label>
-                    <input type="text" name="" class="board__taskCreator-form--item-input--item" id="task-description">
-                </div>
-                <div class="board__taskCreator-form--item">
-                    <label for="">Fecha de entrega</label>
-                    <input type="text" name="" class="board__taskCreator-form--item-input--item" id="">
-                </div>
-            </div>
-        </form>
     </div>
+    <footer>
+        <p>Diseño por <a href="">Jesus Porras</a>, código por David Barón</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

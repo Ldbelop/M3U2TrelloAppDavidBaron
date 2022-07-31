@@ -2,18 +2,18 @@
 
 .board{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin-bottom: 51px;
+    height: calc(980px / 1.085);
 }
 
 .board__column{
-    height: 904px;
-    width: 420px;
+    width: calc(420px / 1.05);
+    height: calc(848.24px / 1.05);
     background-color: var(--cardBackground);
     border-radius: 50px;
-    margin-right: 54px;
+    margin-left: 54px;
     overflow: hidden;
 }
 
@@ -23,4 +23,24 @@
     background-color: var(--titleBackground);
     color: var(--titleText);
     font-size: var(--title);
+}
+
+
+
+.board__column-container{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#ready-to-start--column{
+    margin-left: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#done--column{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
