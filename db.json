@@ -13,7 +13,8 @@
             "title": "Título 2",
             "resPerson": "User2",
             "state": "to-start",
-            "content": "Lorem Ipsum dolor amet"
+            "content": "Lorem Ipsum dolor amet",
+            "deadline": "20/oct/22"
         }
     ]
 }    
