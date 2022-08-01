@@ -15,7 +15,6 @@ let button = document.querySelector("#form--button");
 
 button.addEventListener("click", () => {
     let data = {
-        id: idArray[idArray.length -1],
         title: document.getElementById("task-title").value,
         resPerson: document.getElementById("task-responsible").value,
         deadline: formatDate(document.querySelector("#deadline").value),
