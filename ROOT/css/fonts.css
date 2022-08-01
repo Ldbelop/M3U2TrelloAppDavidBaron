@@ -1,4 +1,5 @@
 :root{
-    --title: 1.5rem;
-    --subTitle: 1.5rem;
+    --title: 1.5rem; /*24px*/
+    --subTitle: 0.875rem; /*14px*/
+    --state: 1.125rem; /*18px*/
 }

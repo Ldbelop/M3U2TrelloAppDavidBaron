@@ -11,14 +11,19 @@
 .board__column{
     width: calc(420px / 1.05);
     height: calc(848.24px / 1.05);
-    background-color: var(--cardBackground);
+    background-color: var(--columnBackground);
     border-radius: 50px;
     margin-left: 54px;
-    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    overflow: scroll;
 }
 
 .board__column .column--title{
+    width: 100%;
     padding: 20px 0px;
+    border-top-right-radius: 50px;
     text-align: center;
     background-color: var(--titleBackground);
     color: var(--titleText);
@@ -43,4 +48,13 @@
 #done--column{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+#in-progress--column #in-progress--column-title{
+    border-top-left-radius: 50px;
+}
+
+#done--column #done--column-title{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0px;
 }

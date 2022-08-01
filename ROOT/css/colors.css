@@ -1,5 +1,11 @@
 :root{
     --titleBackground: #040615;
     --titleText:#f9f9f9;
-    --cardBackground: #F2F4F5;
+    --columnBackground: #F2F4F5;
+    --cardBackground: #FFFFFF;
+    --cardTitleBackground: #293241;
+    --deadlineBackground: #BFD0DA;
+    --stateBackground: #1B65A5;
+    --taskCreatorContent: #EFEFEF;
+    --responsiblePerson : #818181;
 }

@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Título 1",
             "resPerson": "User1",
-            "state": "to-start",
+            "state": "LISTO PARA INICIAR",
             "content": "Lorem Ipsum dolor amet",
             "deadline": "20/oct/22"
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "title": "Título 2",
             "resPerson": "User2",
-            "state": "to-start",
+            "state": "LISTO PARA INICIAR",
             "content": "Lorem Ipsum dolor amet",
             "deadline": "20/oct/22"
         }

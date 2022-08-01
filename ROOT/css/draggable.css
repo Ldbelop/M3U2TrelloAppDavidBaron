@@ -1,0 +1,7 @@
+.draggable-source--is-dragging{
+    opacity: 0;
+}
+
+.draggable--over{
+    opacity: 50%;
+}

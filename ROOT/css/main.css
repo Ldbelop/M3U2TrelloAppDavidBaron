@@ -2,6 +2,8 @@
 @import "./body.css";
 @import "./board.css";
 @import "./taskCreator.css";
+@import "./card.css";
+@import "./draggable.css";
 
 * {   
     margin: 0;

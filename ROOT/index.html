@@ -22,10 +22,10 @@
                     <h1 class="column--title">LISTO PARA INICIAR</h1>
                 </div>
                 <div class="board__column" id="in-progress--column">
-                    <h1 class="column--title">TRABAJO EN PROGRESO</h1>
+                    <h1 class="column--title" id="in-progress--column-title">TRABAJO EN PROGRESO</h1>
                 </div>
                 <div class="board__column" id="done--column">
-                    <h1 class="column--title">TERMINADO</h1>    
+                    <h1 class="column--title" id="done--column-title">TERMINADO</h1>    
                 </div>
         </div>
         <div class="board__taskCreator-container">
@@ -36,17 +36,20 @@
                         <label for="task-responsible">Responsable tarea</label>
                         <input type="text" name="" class="board__taskCreator-form--item-input--item" id="task-responsible" placeholder="Añadir nombre del responsable">
                     </div>
-                    <div class="board__taskCreator-form--item" id="task-title">
+                    <div class="board__taskCreator-form--item" id="task-title-container">
                         <label for="task-title">Titulo tarea</label>
-                        <input type="text" name="" class="board__taskCreator-form--item-input--item" class="task-title" placeholder="Añadir título">
+                        <input type="text" name="" class="board__taskCreator-form--item-input--item" id="task-title" placeholder="Añadir título">
                     </div>
-                    <div class="board__taskCreator-form--item" id="task-description">
+                    <div class="board__taskCreator-form--item" id="task-description-container">
                         <label for="task-description">Descripción</label>
-                        <textarea class="board__taskCreator-form--item-input--item" class="task-description" placeholder="Añadir descripción"></textarea>
+                        <textarea class="board__taskCreator-form--item-input--item" id="task-description" placeholder="Añadir descripción"></textarea>
                     </div>
                     <div class="board__taskCreator-form--item">
                         <label for="">Fecha de entrega</label>
-                        <input type="text" name="" class="board__taskCreator-form--item-input--item" id="" placeholder="Añadir fecha de entrega">
+                        <input type="date" name="" class="board__taskCreator-form--item-input--item" id="deadline" placeholder="Añadir fecha de entrega">
+                    </div>
+                    <div class="board__taskCreator-form--button">
+                        <button id="form--button" type="button">Envíar</button>
                     </div>
                 </div>
             </form>
@@ -56,6 +59,12 @@
         <p>Diseño por <a href="">Jesus Porras</a>, código por David Barón</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./js/requests.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/sortable.js"></script>
+
+    <script src="./js/api/requests.js"></script>
+    <script src="./js/helpers/newCard.js"></script>
+    <script src="./js/helpers/dateFormat.js"></script>
+    <script src="./js/helpers/draggable.js"></script>
 </body>
 </html>
