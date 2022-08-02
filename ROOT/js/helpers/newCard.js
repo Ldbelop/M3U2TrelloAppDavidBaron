@@ -1,4 +1,5 @@
 let idArray = []
+let length;
 
 function renderCard(card){
     let template = `<div class="card" >
@@ -8,13 +9,15 @@ function renderCard(card){
                     </div>`;
     let column = document.querySelector("#ready-to-start--column")
     column.innerHTML += template;
-    idArray.push(card.id);
+    length = idArray.push(card.id);
+    console.log(idArray)
 }
 
 let button = document.querySelector("#form--button");
 
 button.addEventListener("click", () => {
     let data = {
+        id: idArray[length - 1] + 1,
         title: document.getElementById("task-title").value,
         resPerson: document.getElementById("task-responsible").value,
         deadline: formatDate(document.querySelector("#deadline").value),
@@ -23,7 +26,7 @@ button.addEventListener("click", () => {
     }
 
     idArray.push(data.id)
-    axios.post('https://my-json-server.typicode.com/Ldbelop/M3U2TrelloAppDavidBaron/examples', data)
+    axios.post('https://my-json-server.typicode.com/Ldbelop/M3U2TrelloAppDavidBaron/examples/1', data)
         .then((response) => {renderCard(response.data)
         console.log("Envío exitoso")})
         .catch((err) => {err})
