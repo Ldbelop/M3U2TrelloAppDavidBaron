@@ -10,7 +10,6 @@ function renderCard(card){
     let column = document.querySelector("#ready-to-start--column")
     column.innerHTML += template;
     length = idArray.push(card.id);
-    console.log(idArray)
 }
 
 let button = document.querySelector("#form--button");
@@ -26,8 +25,8 @@ button.addEventListener("click", () => {
     }
 
     idArray.push(data.id)
-    axios.post('https://my-json-server.typicode.com/Ldbelop/M3U2TrelloAppDavidBaron/examples/1', data)
-        .then((response) => {renderCard(response.data)
+    axios.post('https://my-json-server.typicode.com/Ldbelop/M3U2TrelloAppDavidBaron/examples', data)
+        .then((response) => {console.log(response);renderCard(response.data)
         console.log("Envío exitoso")})
         .catch((err) => {err})
 })
