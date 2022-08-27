@@ -3,7 +3,7 @@
 Clon sencillo de trello que muestra la métodología Kanban
 
 ---
-# 📁 Estrucura de carpetas 
+# 📁 Estructura de carpetas 
 
 `assets/` Contiene las fuentes, imagenes, y mockups del proyecto
 
